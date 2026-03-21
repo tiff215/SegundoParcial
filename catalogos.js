@@ -53,26 +53,25 @@ function mostrarProductos() {
     });
 }
 
-
 // Función para agregar al carrito
 function agregarAlCarrito(idProducto) {
+    const productoSeleccionado = productos.find(productos => productos.id === idProducto);
+    
+    // En este arreglo se agrega un localStorage que guarda los datos de el array en el navegador para que todas las páginas puedan usarlo.
+    // lo que hace el JSON.parse es que toma el dato en texto que le das y los convierte a un nuevo arreglo.
+    // luego le dice que si no puede hacer eso, cree un nuevo arreglo
+    let carritoActual = JSON.parse(localStorage.getItem("carritoGuardado")) || [];
+    
+    carritoActual.push(productoSeleccionado);
 
-    const productoSeleccionado = productos.find(function(producto) {
-        return producto.id === idProducto;
-    });
-
-    if (!productoSeleccionado) {
-        alert("Producto no encontrado");
-        return;
-    }
-
-    carrito.push(productoSeleccionado);
+    // aquí el JSON.stringifly hace lo contrario, converte un arreglo a texto 
+    // y usamos el localStorage.setItem para guardar ese dato en el arreglo que está en memoria del navegador
+    localStorage.setItem("carritoGuardado", JSON.stringify(carritoActual));
 
     alert(productoSeleccionado.nombre + " agregado al carrito");
 
     console.log("Carrito:", carrito);
 }
-
 
 // Ejecutar cuando cargue la página
 mostrarProductos();
