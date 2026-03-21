@@ -1,0 +1,99 @@
+.h1tit {
+    color: #B49ED9;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.contacto-info {
+    max-width: 90%;
+    margin: 40px auto;
+    text-align: center;
+    color: hsl(260, 48%, 83%);
+    padding: 20px;
+}
+
+.contacto-info p {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.tith2 {
+    color: #B49ED9;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.tith3 {
+    color: #BCB5C7;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+
+.contacto-form {
+    background: #813DBF;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 800px; 
+    margin: 40px auto;
+    color: #FFFFFF;
+}
+
+.contacto-form input[type="text"],
+.contacto-form input[type="email"],
+.contacto-form select {
+    display: block;
+    width: 90%;
+    margin: 15px auto;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #C094F2;
+    background: #2A2A2A;
+    color: white;
+    font-size: 1.1em;
+}
+
+.contacto-form input::placeholder {
+    color: #E0D6F5;
+}
+
+.contacto-form label {
+    display: inline-block;
+    background: #C094F2;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.contacto-form label:hover {
+    background: #C8B3E3;
+}
+
+.contacto-form button {
+    padding: 15px 30px;
+    margin: 20px 10px;
+    background-color: #C094F2;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.contacto-form button:hover {
+    background-color: #C8B3E3;
+}
+
+.contacto-info hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #C094F2, transparent);
+    margin: 30px auto;
+    width: 60%;
+}

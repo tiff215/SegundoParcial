@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroShop</title>
+    <link rel="stylesheet" href="./Css/Normalizer.css" />
+     <link rel="stylesheet" href="./Css/css_general.css" />
+     <link rel="stylesheet" href="./Css/css_carrito.css">
+</head>
+<body>
+    <header>
+    <nav class="Menunav">
+            <ul class="navlogo">
+                <li class="navlogoli">
+                    <div>
+                        <a href="index.html">
+                            <img src="./Imagenes/Gemini_Generated_Image_a03ldta03ldta03l (1).png" alt="Logo ElectroShop">
+                        </a>
+                        <a href="index.html">
+                            ElectroShop
+                        </a>
+                    </div>
+                </li>
+                </ul>
+                <ul class="navmenu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Carrito.html">Carrito</a></li>
+                    <li><a href="Catalogo.html">Catalogo</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Cuerpo -->
+         <main>
+            <!-- Contenido -->
+             
+            <section class="carritosec">
+             <h1 class="titulo-carrito">Carrito de compras</h1>
+             <div id="contenedor-carrito"></div>
+             <h2 class="total">
+             Total: $<span id="monto-total">0</span>
+             </h2>
+             <div class="pago">
+             <input type="number" id="input-pago" placeholder="Ingresa tu pago">
+             <button onclick="realizarPago()">Pagar</button>
+             </div>
+             <p id="mensaje-pago"></p>
+            </section>
+             <!-- Fin contenido -->
+         </main>
+         <!-- Pie pagina -->
+            <footer>
+        <p>&copy; ElectroShop 2026</p>
+    </footer>
+    <script src="./Js/carrito.js"></script>
+</body>
+</html>
