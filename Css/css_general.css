@@ -1,0 +1,103 @@
+/* General */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+  font-family: "Segoe UI", Arial, sans-serif
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #0D0B0D;
+}
+
+/* Nav menu  */
+header{
+    background-color: #6E2FCC;
+}
+
+/*Logo y texto del logo*/
+.navlogo {
+  list-style: none;
+}
+.navlogo img {
+  width: 75px;
+}
+.navlogo a {
+  font-size: 30px;
+}
+.navlogoli div {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+ 
+}
+.prue div a {
+  padding: 0px 0px 0px 0px;
+}
+/* Navegacion entre paginas */
+.Menunav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.Menunav ul {
+  list-style: none;
+  display: flex;
+}
+
+.Menunav ul li {
+  display: inline-block;
+  margin: 0 15px;
+  position: relative;
+}
+
+.Menunav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+.navmenu li a {
+  padding: 30px 15px;
+}
+
+.Menunav li ul {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  top: 100%;
+  left: 0;
+  background-color: #7B40B8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.Menunav li:hover > ul {
+  display: block;
+}
+.Menunav li ul li {
+  display: block; 
+  padding: 0;
+  margin: 0;
+}
+.Menunav li:hover > ul a {
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 14px;
+}
+
+main{
+  flex: 1;
+}
+
+/*-----------------Footer-----------------*/
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #6E2FCC;
+  font-size: 0.9rem;
+  color: #fff;
+}

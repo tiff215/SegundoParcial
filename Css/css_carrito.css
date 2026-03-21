@@ -1,0 +1,86 @@
+.titulo-carrito {
+  text-align: center;
+  color: #8F40D6;
+  margin-top: 20px;
+}
+
+
+#contenedor-carrito {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+
+#contenedor-carrito div {
+  background: #813DBF;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* Botón eliminar */
+#contenedor-carrito button {
+  margin-top: 10px;
+  padding: 10px;
+  background: #C094F2;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#contenedor-carrito button:hover {
+  background: #C8B3E3;
+}
+
+/* Total */
+.total {
+  text-align: center;
+  color: white;
+}
+
+/* Pago */
+.pago {
+  text-align: center;
+  margin: 20px;
+}
+
+.pago input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+}
+
+.pago button {
+  padding: 10px;
+  background: #8F40D6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+#mensaje-pago {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#contenedor-carrito p {
+  color: #752bc9;       
+  text-align: center;
+}
+
+.carritosec{
+  background: #B49ED9;    
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  max-width: 300px;
+  margin: 20px auto;        
+}
